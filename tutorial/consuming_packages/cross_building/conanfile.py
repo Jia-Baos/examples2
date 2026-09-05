@@ -7,9 +7,10 @@ class CompressorRecipe(ConanFile):
 
     def requirements(self):
         self.requires("zlib/1.3.1")
-    
-    def build_requirements(self):
-        self.tool_requires("cmake/3.27.9")
 
+    # def build_requirements(self):
+    #     self.tool_requires("cmake/3.27.9")
+
+    # 配置 CMake 布局，指定生成器和输出目录。
     def layout(self):
         cmake_layout(self)
